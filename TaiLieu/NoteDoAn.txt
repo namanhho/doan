@@ -1,0 +1,6 @@
+A muốn gửi thông điệp cho B, A sẽ ký với private key, và B sẽ dùng chứng chỉ công khai chứa thông tin và khóa công khai của A để xác thực
+- nếu B giải mã thông điệp mà không khớp thì chứng tỏ thông điệp không toàn vẹn => đảm bảo tính toàn vẹn
+- nếu B giải mã thành công tức chữ ký đó chắc chắn của A vì chỉ có A mới có khóa private key => đảm bảo tính không chối bỏ
+
+Trong thực tế thì để tránh giả mạo, cần 1 bên thứ 3 tin cậy để xác định người ký chính là người ký mà không phải bị người khác giả mạo. Nếu kiểm tra đúng
+bên cấp chứng chỉ sẽ ký bằng khóa cá nhân của họ, và bên B có thể tin cậy người gửi chính là A. Bên cấp chứng chỉ là bên được tin cập từ cả bên A và bên B.
